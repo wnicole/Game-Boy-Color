@@ -1,0 +1,1404 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/* Variables */
+
+@red: rgb(220, 31, 64);
+@purple: rgb(98, 45, 145);
+@green: rgb(142, 194, 63);
+@yellow: rgb(249, 211, 8);
+@blue: rgb(0, 161, 188);
+@ltGray: rgb(228, 229, 230);
+@midGray: rgb(170, 170, 170);
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-family: 'Raleway';
+  font-weight: 200;
+  font-size: 20px;
+  background-color: rgb(245, 245, 245);
+  border: 0;
+  padding: 8px;
+  padding-left:12px;
+  margin-bottom: 12px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  outline:none;
+}
+
+form {
+  font-family: 'Raleway';
+  font-weight: 200;
+  font-size: 20px;
+  padding-left:12px;
+}
+
+.gbQuantitySelect select {
+  border: 0;  /*Removes border*/
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none;  /*Removes default style Firefox*/
+  font-family: 'Raleway';
+  font-weight: 200;
+  font-size: 22px;
+  height: 40px;
+  padding-left: 14px;
+  width: 40px;
+  margin-left: 10px;
+  border-radius: 0;
+  border:0;
+  outline: none;
+}
+
+.gbQuantitySelect .Month{
+  border: 0;  /*Removes border*/
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none;  /*Removes default style Firefox*/
+  font-family: 'Raleway';
+  font-weight: 200;
+  font-size: 22px;
+  height: 40px;
+  padding-left: 14px;
+  width: 140px;
+  margin-left: 10px;
+  border-radius: 0;
+  border:0;
+  outline: none;
+}
+
+.gbQuantitySelect .Year{
+  border: 0;  /*Removes border*/
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none;  /*Removes default style Firefox*/
+  font-family: 'Raleway';
+  font-weight: 200;
+  font-size: 22px;
+  height: 40px;
+  padding-left: 14px;
+  width: 90px;
+  margin-left: 10px;
+  border-radius: 0;
+  border:0;
+  outline: none;
+}
+
+.CVV {
+  width: 24%;
+  float: right;
+}
+
+.gbQuantitySelect option {
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none;  /*Removes default style Firefox*/
+  font-family: 'Raleway';
+  font-weight: 200;
+  font-size: 22px;
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+input[type=text]:focus, textarea:focus, select:focus {
+  box-shadow: 0 0 6px @green;
+}
+
+
+
+/* Site Styles */
+
+.red {
+  color: @red;
+  font-weight: 400;
+}
+
+.purple {
+  color: @purple;
+  font-weight: 400;
+}
+
+.green {
+  color: @green;
+  font-weight: 400;
+}
+
+.yellow {
+  color: @yellow;
+  font-weight: 400;
+}
+
+.blue {
+  color: @blue;
+  font-weight: 400;
+}
+
+.topContainer {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.topContent {
+  width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+  height: 70px;
+}
+
+nav {
+  width: 100%;
+  display: inline;
+  
+  span {
+    width: 20%;
+    display: block;
+    float: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  
+  img {
+    height: 45px;
+    margin-top: -12px;
+    cursor: auto;
+  }
+  
+  .navBuy {
+    width: 70px;
+    height: 30px;
+    background-color: @green;
+    margin: 0 auto;
+    margin-top: -5px;
+    padding-top: 5px;
+    border-radius: 15px;
+    font-weight: 300;
+    color:white;
+    float: none;
+    padding: 5px 18px;
+  }
+  
+  .page1On {
+    color: @red;
+    font-weight: 400;
+  }
+  
+  .page2On {
+    color: @blue;
+    font-weight: 400;
+  }
+  
+  .page3On {
+    color: @yellow;
+    font-weight: 400;
+  }
+  
+}
+
+
+/* Page 1 Styles */
+
+.firstContainer {
+  background-color: black;
+  width: 100%;
+  /* height: 750px; */
+  height: 100%;
+}
+
+.Page1 {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+  
+  .textPart {
+    width: 37%;
+    float: left;
+  
+    h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      color: white;
+      font-size: 70px;
+      text-transform: uppercase;
+      border-bottom: solid 1px white;
+      padding-bottom: 20px;
+      padding-left: 15%;
+      }
+    
+    h3 {
+      padding-left: 15%;
+      padding-top: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 100;
+      color: white;
+      font-size: 28px;
+      line-height: 45px;
+      }
+    }
+    
+    .gameboyMobile {
+      display: none;
+      text-align: center;
+      
+      h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 70px;
+        text-transform: uppercase;
+        border-bottom: solid 1px white;
+        text-align: center;
+        padding: 30px 20px 20px 20px;
+        }
+      
+      h3 {
+        padding: 20px 20px 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 100;
+        color: white;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+        }
+      img {
+        margin: 0 auto;
+        width:80%;
+        margin-top: 30px;
+      }
+    }
+}
+  
+.Page1 .Page1tableDiv {
+  display: table;
+  height: 100%;
+}
+  
+.gameboyFan {
+  float: left;
+  width:63%;
+  position: relative;
+  margin-top: -40px;
+
+  
+  .backRow {
+    position: absolute;
+    margin-top: 60px;
+    width: 100%;
+    
+      img{
+        height: 250px;
+        position: absolute;
+      }
+      .backLeft {
+        left: 42%;
+        transition: left 2s;
+      }
+      
+      .backLeftEnd{
+        left: 10%;
+      }
+      
+      .backRight {
+        right: 42%;
+        transition: right 2s;
+      }
+      
+      .backRightEnd {
+        right:10%;
+      }
+  }
+  
+  .midRow {
+    position: absolute;
+    margin-top: 25px;
+    width: 100%;
+
+    
+      img {
+        position:absolute;
+        height: 375px;
+      }
+      .midLeft {
+        left: 38%;
+        transition: left 2s;
+      }
+      
+      .midLeftEnd {
+        left: 20%;
+      }
+      
+      .midRight {
+        right: 38%;
+        transition: right 2s;
+      }
+      
+      .midRightEnd {
+        right: 20%;
+      }
+  }
+  
+  .frontRow {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    
+    .click2play {
+      margin-top: -455px;
+      margin-left: 50%;
+      width: 100%;
+      
+      .click2playBubble {;
+        width: 171px;
+        height: 147px;
+        position: absolute;
+        background-color: @blue;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 100;
+        color: white;
+        font-size: 24px;
+        line-height: 30px;
+        padding-top: 55px;
+        margin-left: -85px;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity .25s;
+      }
+    }
+  }
+  
+  .frontGB {
+      height: 500px;
+      cursor: pointer;
+  }
+  
+  .konamiHeart {
+    width: 80px;
+    right: 0;
+    margin-right: 5%;
+    margin-top: -10px;
+    position: absolute;
+    display: none;
+  }
+}
+
+
+
+/* Emulator page */
+
+.emulatorSection {
+  background-color: rgba(0, 0, 0, .9);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 9998;
+  top: 0;
+  display: none;
+}
+
+.gameBoyContainer {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  margin-top: -1000px;
+  transition: margin-top .75s;
+  
+  .emulatorGameBoy {
+    height: 950px;
+    background-image: url(../img/yellowGB.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    
+    canvas {
+      display: block;
+      margin: 0 auto;
+      padding-top: 90px;
+      height: 370px;
+      width: 326px;
+    }
+  }  
+}
+
+.gameBoyDown {
+  margin-top: 0;
+}
+
+.GBkeys {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  padding: 8px;
+  font-size: 18px;
+  width:370px;
+  height: 35px;
+  background-color: @green;
+  margin: 0 auto;
+  margin-top: 125px;
+  border-radius: 25px;
+  color:white;
+  
+  span {
+    font-weight: 700;
+  }
+}
+
+.GBdepressed {
+  width: 473px;
+  height: 136px;
+  margin: 0 auto;
+  margin-top: 23px;
+  position: relative;
+}
+
+.Akey {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(0, 0, 0, .25);
+  right: 0;
+  margin-top: 18px;
+  border-radius: 35px;
+  position: absolute;
+  display: none;
+}
+
+.Bkey {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(0, 0, 0, .25);
+  right: 0;
+  margin-top: 48px;
+  border-radius: 35px;
+  margin-right: 104px;
+  position: absolute;
+  display: none;
+}
+
+.UPkey {
+  width: 48px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, .25);
+  border-radius: 5px;
+  margin-left: 44px;
+  position: absolute;
+  display: none;
+}
+
+.DOWNkey {
+  width: 48px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, .25);
+  margin-top: 90px;
+  border-radius: 5px;
+  margin-left: 44px;
+  position: absolute;
+  display: none;
+}
+
+.LEFTkey {
+  width: 44px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, .25);
+  margin-top: 43px;
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+}
+
+.RIGHTkey {
+  width: 44px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, .25);
+  margin-top: 43px;
+  border-radius: 5px;
+  margin-left: 90px;
+  position: absolute;
+  display: none;
+}
+
+/* Page 2 Styles */
+@-webkit-keyframes targetPulse {
+  0%   { opacity: .1; }
+  50% { opacity: 1; }
+  100%   { opacity: .1; }
+}
+@-moz-keyframes targetPulse {
+  0%   { opacity: .1; }
+  50% { opacity: 1; }
+  100%   { opacity: .1; }
+}
+@keyframes targetPulse {
+  0%   { opacity: .1; }
+  50% { opacity: 1; }
+  100%   { opacity: .1; }
+}
+
+.outerRing {
+  -webkit-animation: targetPulse 2s infinite;
+  -moz-animation: targetPulse 2s infinite;
+  animation: targetPulse 2s infinite;
+}
+
+.secondContainer {
+  background-color: @ltGray;
+  width: 100%;
+  height: 100%;
+  
+  .Page2 {
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+  }
+  
+  .textPart {
+    float: left;
+    width: 30%;
+    padding-top: 150px;
+  
+    h1 {
+      color: black;
+      font-size: 55px;
+      border-bottom: solid 1px black;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+      padding-left: 5%;
+    }
+    h3 {
+      color: black;
+      padding-left: 5%;
+      padding-top: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 100;
+      font-size: 28px;
+      line-height: 45px;
+      margin-right: 50px;
+    }
+  }
+}
+
+.gameboyTech {
+  float: left;
+  width: 70%;
+  margin-top: 100px;
+  position: relative;
+  
+  img {
+    width: 100%;
+    padding: 30px 50px 0 70px; 
+  }
+  #gbc360click {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 50px 0 70px;
+    
+    .path {
+      /*opacity: 0;*/
+    }
+    
+    .flag {
+      opacity: 0;
+    }
+  }
+  
+  
+}
+
+
+/* Game Boy 360 Target Animations */
+
+#screenPath {
+  stroke-dasharray: 1650;
+  stroke-dashoffset: 1650;
+  transition: stroke-dashoffset .75s;
+}
+
+#screenFlag {
+  transition: opacity .75s;
+  opacity: 0;
+}
+
+
+#screenTarget:hover ~ #screenPath {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset .75s; 
+}
+
+#screenTarget:hover ~ #screenFlag {
+  transition: opacity .75s;
+  opacity: 100;
+}
+
+
+#powerPath {
+  stroke-dasharray: 1050;
+  stroke-dashoffset: 1050;
+  transition: stroke-dashoffset .75s;
+}
+
+#powerFlag {
+  transition: opacity .75s;
+  opacity: 0;
+}
+
+
+#powerTarget:hover ~ #powerPath {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset .75s; 
+}
+
+#powerTarget:hover ~ #powerFlag {
+  transition: opacity .75s;
+  opacity: 100;
+}
+
+
+#buttonPath {
+  stroke-dasharray: 1440;
+  stroke-dashoffset: 1440;
+  transition: stroke-dashoffset .75s;
+}
+
+#buttonFlag {
+  transition: opacity .75s;
+  opacity: 0;
+}
+
+
+#buttonTarget:hover ~ #buttonPath {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset .75s; 
+}
+
+#buttonTarget:hover ~ #buttonFlag {
+  transition: opacity .75s;
+  opacity: 100;
+}
+
+
+#speakerPath {
+  stroke-dasharray: 770;
+  stroke-dashoffset: -770;
+  transition: stroke-dashoffset .75s;
+}
+
+#speakerFlag {
+  transition: opacity .75s;
+  opacity: 0;
+}
+
+
+#speakerTarget:hover ~ #speakerPath {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset .75s; 
+}
+
+#speakerTarget:hover ~ #speakerFlag {
+  transition: opacity .75s;
+  opacity: 100;
+}
+
+
+#cartridgePath {
+  stroke-dasharray: 1080;
+  stroke-dashoffset: 1080;
+  transition: stroke-dashoffset .75s;
+}
+
+#cartridgeFlag {
+  transition: opacity .75s;
+  opacity: 0;
+}
+
+
+#cartridgeTarget:hover ~ #cartridgePath {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset .75s; 
+}
+
+#cartridgeTarget:hover ~ #cartridgeFlag {
+  transition: opacity .75s;
+  opacity: 100;
+}
+
+
+#portPath {
+  stroke-dasharray: 1080;
+  stroke-dashoffset: -1080;
+  transition: stroke-dashoffset .75s;
+}
+
+#portFlag {
+  transition: opacity .75s;
+  opacity: 0;
+}
+
+
+#portTarget:hover ~ #portPath {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset .75s; 
+}
+
+#portTarget:hover ~ #portFlag {
+  transition: opacity .75s;
+  opacity: 100;
+}
+
+
+#volumePath {
+  stroke-dasharray: 1150;
+  stroke-dashoffset: 1150;
+  transition: stroke-dashoffset .75s;
+}
+
+#volumeFlag {
+  transition: opacity .75s;
+  opacity: 0;
+}
+
+
+#volumeTarget:hover ~ #volumePath {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset .75s; 
+}
+
+#volumeTarget:hover ~ #volumeFlag {
+  transition: opacity .75s;
+  opacity: 100;
+}
+
+
+#batteryPath {
+  stroke-dasharray: 1440;
+  stroke-dashoffset: 1440;
+  transition: stroke-dashoffset .75s;
+}
+
+#batteryFlag {
+  transition: opacity .75s;
+  opacity: 0;
+}
+
+
+#batteryTarget:hover ~ #batteryPath {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset .75s; 
+}
+
+#batteryTarget:hover ~ #batteryFlag {
+  transition: opacity .75s;
+  opacity: 100;
+}
+
+
+
+/* Page 3 Styles */
+
+.thirdContainer {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  
+  .textPart {
+    width: 100%;
+    padding-top: 145px;
+  
+    h1 {
+      width: 70%;
+      text-align: center;
+      color: white;
+      font-size: 55px;
+      border-bottom: solid 1px white;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+      margin: 0 auto;
+    }
+    h3 {
+      width: 50%;
+      text-align: center;
+      color: white;
+      padding-top: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 100;
+      font-size: 28px;
+      line-height: 45px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.cycle-slideshow{
+  width: 100%;
+  height: 212px;
+  margin-top: 60px;
+  overflow: hidden;
+  
+  img {
+      width: 185px;
+      margin-right: 15px;
+  }
+  
+  .cartridgeAbout {
+      width: 185px;
+      margin-right: 15px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      float: left;
+      background-image: url(../img/cartridgeBlank.png);
+      background-size: 100%;
+      padding: 10px;
+      height: 212px;
+      background-repeat: no-repeat;
+      padding-top: 30px;
+      
+      h4 {
+        top: 0;
+        color: @blue;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      
+      p {
+        top: 0;
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 5px;
+      }
+  }
+}
+
+
+
+
+
+/* Page 4 Styles */
+
+.fourthContainer {
+  background-color: @ltGray;
+  width: 100%;
+  height: 100%;
+  
+  .Page4 {
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+  }
+  
+  .formPart {
+    float: left;
+    width: 45%;
+    padding-top: 110px;
+  
+    h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      color: black;
+      font-size: 70px;
+      text-transform: uppercase;
+      border-bottom: solid 1px black;
+      padding-bottom: 20px;
+      padding-left: 15%;
+    }
+    .OGB h1 {
+      padding: 0;
+      border-bottom: none;
+    }
+    
+    .priceSticker {
+      background-color: @green;
+      width: 130px;
+      height: 130px;
+      float: right;
+      position: absolute;
+      margin-left: 37%;
+      border-radius: 70px;
+      margin-top: -15px;
+      
+      p {
+        font-family: 'Quicksand';
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 27px;
+        text-align: center;
+      }
+      
+      h3 {
+        text-align: center;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        color: white;
+        font-size: 60px;
+        letter-spacing: -4px;
+        margin-right: 3px;
+      }
+      
+      span {
+        font-size: 35px;
+        padding-bottom: 5px;
+        position: relative;
+        top: -18px;
+        left: -4px;
+      }
+    }
+    
+    .vertPosition {
+      float: left;
+      width:80px;
+    }
+    
+    .billingLabel {
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -moz-transform:rotate(-90deg);
+      
+      background-color: @midGray;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
+      font-size: 24px;
+      letter-spacing:1px;
+      color: white;
+      height: 75px;
+      width: 265px;
+      position: relative;
+      top: 95px;
+      left: -95px;
+      display: inline-block;
+      padding: 30px 0 0 30px;
+    }
+    
+    .paymentLabel {
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -moz-transform:rotate(-90deg);
+      
+      background-color: @midGray;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
+      font-size: 24px;
+      letter-spacing:1px;
+      color: white;
+      height: 75px;
+      width: 265px;
+      position: relative;
+      top: 95px;
+      left: -95px;
+      display: inline-block;
+      padding: 30px 0 0 80px;
+    }
+    
+    .billing {
+      margin-left: 95px;
+      margin-top: 20px;
+    }
+    
+    .billingInputs {
+      position: relative;
+      z-index: 5;
+    }
+    
+    .gbQuantitySelect {
+      display: inline-block;
+      float: left;
+      margin-bottom: 10px;
+    }
+    
+    .payPage2 {
+      display: none;
+    }
+    
+    .colorSelect {
+        display: inline-block;
+        float: right;
+        p{
+          font-family: 'Raleway';
+          font-weight: 200;
+          font-size: 20px;
+          float: left;
+          padding: 10px;
+          padding-right: 0;
+        }
+        
+        .Color {
+          width:40px;
+          height: 40px;
+          display: inline-block;
+          float: left;
+          margin-left: 10px;
+          
+        }
+        
+        .colorRed {
+          background-color: @red;
+        }
+        .colorGreen {
+          background-color: @green;
+        }
+        .colorYellow {
+          background-color: @yellow;
+        }
+        .colorBlue {
+          background-color: @blue;
+        }
+        .colorPurple {
+          background-color: @purple;
+        }
+        
+        #colorSelected {
+          width: 20px;
+          height: 20px;
+          background-color: black;
+          padding:10px;
+          margin: 0 auto;
+          margin-top: 10px;
+        }
+      }
+      
+      .cardSelect {
+        display: inline-block;
+        float: left;
+        margin-bottom: 10px;
+        
+        p{
+          font-family: 'Raleway';
+          font-weight: 200;
+          font-size: 20px;
+          float: left;
+          padding: 10px;
+          padding-right: 0;
+          margin-right:5px;
+        }
+        
+        .Card {
+          width:65px;
+          height: 40px;
+          display: inline-block;
+          float: left;
+          margin-left: 10px;
+          
+        }
+        
+        .cardSelected {
+          width: 65px;
+          height: 40px;
+          box-shadow: 0 0 10px @green;
+        }
+      }
+
+    
+    .formCity {
+      width:45%;
+      display: inline;
+    }
+    .formState {
+      width:24%;
+      margin:0 2.5% 0;
+      display: inline;
+    }
+    .formZIP {
+      width:24%;
+      display: inline;
+      float:right;
+    }
+    
+    .next {
+      width: 24%;
+      height: 35px;
+      float: right;
+      text-align: center;
+      font-family: 'Raleway';
+      font-weight: 200;
+      font-size: 20px;
+      color: white;
+      background-color: @green;
+      border: 0;
+      padding: 8px;
+      padding-left:12px;
+      margin-bottom: 12px;
+    }
+    
+    .done {
+      width: 24%;
+      height: 35px;
+      float: right;
+      text-align: center;
+      font-family: 'Raleway';
+      font-weight: 200;
+      font-size: 20px;
+      color: white;
+      background-color: @green;
+      border: 0;
+      padding: 8px;
+      padding-left:12px;
+      margin-bottom: 12px;
+    }
+    
+    .back {
+      width: 24%;
+      height: 35px;
+      float: left;
+      text-align: center;
+      font-family: 'Raleway';
+      font-weight: 200;
+      font-size: 20px;
+      color: white;
+      background-color: @midGray;
+      border: 0;
+      padding: 8px;
+      padding-left:12px;
+      margin-bottom: 12px;
+    }
+  }
+  
+  .orderRight {
+    width: 55%;
+    float: left;
+    padding-top: 100px;
+    text-align: center;
+    padding-left: 6%;
+  }
+  
+  .gameboyOrder {
+    display: inline-block;
+    
+    .largeGB { 
+      float: left;
+      
+      img {
+        height: 550px;
+      }
+    }
+    
+    .gameSelect {
+      float: left;
+      margin-left: 25px;
+      width: 125px;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      
+      
+      .game {
+        height: 145px;
+        background-image: url(../img/cartridgeBlank.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+        padding-top: 35px;
+        cursor: pointer;
+      }
+
+      p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom:3px;
+        color: @midGray;
+      }
+    }
+  }
+}
+
+/* Game Selection Page */
+
+.gameSelectBG {
+  background-color: rgba(0, 0, 0, .9);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 9998;
+  bottom: 0;
+  display: none;
+}
+
+.gameSelectOptions {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  display: block;
+  margin-top: 100px;
+  
+  h3 {
+    font-family: 'Quicksand';
+    font-weight: 300;
+    color: @green;
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .gamesRow1 {
+    display: block;
+    width: 866px;
+    margin: 0 auto;
+  }
+  
+  .gamesRow2 {
+    display: block;
+    width: 866px;
+    margin: 0 auto;
+    
+    p {
+      margin-top:100px;
+    }
+  }
+  
+  .gameOption {
+    width: 160px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    
+    img {
+      width: 160px;
+    }
+    
+    p {
+      float: left;
+      position: absolute;
+      margin-top: 108px;
+      padding-top: 40px;
+      margin-left: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      text-align: center;
+      top: 0;
+      width: 120px;
+      height: 110px;
+      background-color: @blue;
+      color: white;
+      opacity: 0;
+      transition: opacity .25s;
+      cursor: pointer;
+    }
+    
+    .r2 {
+      margin-top: 305px;
+    }
+  }
+}
+
+.gameOption:hover p{
+      opacity: 1;
+}
+
+.thankYouModal {
+  background-color: rgba(0, 0, 0, .9);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index:5000;
+  top: 0;
+  left: 0;
+  display: none;
+  
+  .thankYouText {
+    width: 500px;
+    margin: 200px auto 0 auto;
+  
+    h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 70px;
+        text-transform: uppercase;
+        border-bottom: solid 1px white;
+        padding: 20px;
+        text-align: center;
+        width: 500px;
+        }
+      
+      h3 {
+        padding: 20px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 100;
+        color: white;
+        font-size: 28px;
+        line-height: 45px;
+        text-align: center;
+        width: 500px;
+      }
+    }
+}
+
+
+
+@media (max-width: 1280px) {
+  .topContainer, .Page1 .Page1tableDiv, .textPart, .gameboyFan, .emulatorSection, .gameBoyContainer, .secondContainer, .thirdContainer, .fourthContainer {
+    display: none;
+  }
+  
+  
+  .Page1 .gameboyMobile {
+    display: block;
+  }
+  
+  body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+
+/* Common Classes (use only if you need them) */
+
+.clearfix:before, .clearfix:after {
+    content: " "; 
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
