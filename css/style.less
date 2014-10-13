@@ -157,10 +157,20 @@ input[type=text]:focus, textarea:focus, select:focus {
   height: 70px;
 }
 
+.tableDiv {
+  display: table;
+  height: 100%;
+}
+
+.table-vcenter {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 nav {
   width: 100%;
   display: inline;
-  
+
   span {
     width: 20%;
     display: block;
@@ -173,13 +183,13 @@ nav {
     margin-top: 25px;
     cursor: pointer;
   }
-  
+
   img {
     height: 45px;
     margin-top: -12px;
     cursor: auto;
   }
-  
+
   .navBuy {
     width: 70px;
     height: 30px;
@@ -193,22 +203,22 @@ nav {
     float: none;
     padding: 5px 18px;
   }
-  
+
   .page1On {
     color: @red;
     font-weight: 400;
   }
-  
+
   .page2On {
     color: @blue;
     font-weight: 400;
   }
-  
+
   .page3On {
     color: @yellow;
     font-weight: 400;
   }
-  
+
 }
 
 
@@ -227,11 +237,11 @@ nav {
   height: 100%;
   max-width: 1900px;
   margin: 0 auto;
-  
+
   .textPart {
     width: 37%;
     float: left;
-  
+
     h1 {
       font-family: 'Quicksand', sans-serif;
       font-weight: 300;
@@ -242,7 +252,7 @@ nav {
       padding-bottom: 20px;
       padding-left: 15%;
       }
-    
+
     h3 {
       padding-left: 15%;
       padding-top: 20px;
@@ -253,11 +263,11 @@ nav {
       line-height: 45px;
       }
     }
-    
+
     .gameboyMobile {
       display: none;
       text-align: center;
-      
+
       h1 {
         font-family: 'Quicksand', sans-serif;
         font-weight: 300;
@@ -268,7 +278,7 @@ nav {
         text-align: center;
         padding: 30px 20px 20px 20px;
         }
-      
+
       h3 {
         padding: 20px 20px 0;
         font-family: 'Raleway', sans-serif;
@@ -285,24 +295,19 @@ nav {
       }
     }
 }
-  
-.Page1 .Page1tableDiv {
-  display: table;
-  height: 100%;
-}
-  
+
 .gameboyFan {
   float: left;
   width:63%;
   position: relative;
   margin-top: -40px;
 
-  
+
   .backRow {
     position: absolute;
     margin-top: 60px;
     width: 100%;
-    
+
       img{
         height: 250px;
         position: absolute;
@@ -311,27 +316,27 @@ nav {
         left: 42%;
         transition: left 2s;
       }
-      
+
       .backLeftEnd{
         left: 10%;
       }
-      
+
       .backRight {
         right: 42%;
         transition: right 2s;
       }
-      
+
       .backRightEnd {
         right:10%;
       }
   }
-  
+
   .midRow {
     position: absolute;
     margin-top: 25px;
     width: 100%;
 
-    
+
       img {
         position:absolute;
         height: 375px;
@@ -340,31 +345,31 @@ nav {
         left: 38%;
         transition: left 2s;
       }
-      
+
       .midLeftEnd {
         left: 20%;
       }
-      
+
       .midRight {
         right: 38%;
         transition: right 2s;
       }
-      
+
       .midRightEnd {
         right: 20%;
       }
   }
-  
+
   .frontRow {
     position: absolute;
     text-align: center;
     width: 100%;
-    
+
     .click2play {
       margin-top: -455px;
       margin-left: 50%;
       width: 100%;
-      
+
       .click2playBubble {;
         width: 171px;
         height: 147px;
@@ -384,12 +389,12 @@ nav {
       }
     }
   }
-  
+
   .frontGB {
       height: 500px;
       cursor: pointer;
   }
-  
+
   .konamiHeart {
     width: 80px;
     right: 0;
@@ -421,14 +426,14 @@ nav {
   top: 0;
   margin-top: -1000px;
   transition: margin-top .75s;
-  
+
   .emulatorGameBoy {
     height: 950px;
     background-image: url(../img/yellowGB.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    
+
     canvas {
       display: block;
       margin: 0 auto;
@@ -436,7 +441,7 @@ nav {
       height: 370px;
       width: 326px;
     }
-  }  
+  }
 }
 
 .gameBoyDown {
@@ -456,7 +461,7 @@ nav {
   margin-top: 125px;
   border-radius: 25px;
   color:white;
-  
+
   span {
     font-weight: 700;
   }
@@ -562,18 +567,19 @@ nav {
   background-color: @ltGray;
   width: 100%;
   height: 100%;
-  
+
   .Page2 {
     width: 100%;
+    height: 100%;
     max-width: 1900px;
     margin: 0 auto;
   }
-  
+
   .textPart {
     float: left;
     width: 30%;
-    padding-top: 150px;
-  
+    padding-top: 120px;
+
     h1 {
       color: black;
       font-size: 55px;
@@ -600,12 +606,12 @@ nav {
 .gameboyTech {
   float: left;
   width: 70%;
-  margin-top: 100px;
+  margin-top: 40px;
   position: relative;
-  
+
   img {
     width: 100%;
-    padding: 30px 50px 0 70px; 
+    padding: 30px 50px 0 70px;
   }
   #gbc360click {
     position: absolute;
@@ -613,17 +619,17 @@ nav {
     width: 100%;
     height: 100%;
     padding: 30px 50px 0 70px;
-    
+
     .path {
       /*opacity: 0;*/
     }
-    
+
     .flag {
       opacity: 0;
     }
   }
-  
-  
+
+
 }
 
 
@@ -643,7 +649,7 @@ nav {
 
 #screenTarget:hover ~ #screenPath {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset .75s; 
+  transition: stroke-dashoffset .75s;
 }
 
 #screenTarget:hover ~ #screenFlag {
@@ -666,7 +672,7 @@ nav {
 
 #powerTarget:hover ~ #powerPath {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset .75s; 
+  transition: stroke-dashoffset .75s;
 }
 
 #powerTarget:hover ~ #powerFlag {
@@ -689,7 +695,7 @@ nav {
 
 #buttonTarget:hover ~ #buttonPath {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset .75s; 
+  transition: stroke-dashoffset .75s;
 }
 
 #buttonTarget:hover ~ #buttonFlag {
@@ -712,7 +718,7 @@ nav {
 
 #speakerTarget:hover ~ #speakerPath {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset .75s; 
+  transition: stroke-dashoffset .75s;
 }
 
 #speakerTarget:hover ~ #speakerFlag {
@@ -735,7 +741,7 @@ nav {
 
 #cartridgeTarget:hover ~ #cartridgePath {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset .75s; 
+  transition: stroke-dashoffset .75s;
 }
 
 #cartridgeTarget:hover ~ #cartridgeFlag {
@@ -758,7 +764,7 @@ nav {
 
 #portTarget:hover ~ #portPath {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset .75s; 
+  transition: stroke-dashoffset .75s;
 }
 
 #portTarget:hover ~ #portFlag {
@@ -781,7 +787,7 @@ nav {
 
 #volumeTarget:hover ~ #volumePath {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset .75s; 
+  transition: stroke-dashoffset .75s;
 }
 
 #volumeTarget:hover ~ #volumeFlag {
@@ -804,7 +810,7 @@ nav {
 
 #batteryTarget:hover ~ #batteryPath {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset .75s; 
+  transition: stroke-dashoffset .75s;
 }
 
 #batteryTarget:hover ~ #batteryFlag {
@@ -820,11 +826,20 @@ nav {
   background-color: black;
   width: 100%;
   height: 100%;
-  
+
+  .Page3 {
+    width: 100%;
+    height: 100%;
+
+    .tableDiv {
+      width: 100%;
+    }
+  }
+
   .textPart {
     width: 100%;
-    padding-top: 145px;
-  
+    padding-top: 20px;
+
     h1 {
       width: 70%;
       text-align: center;
@@ -856,12 +871,12 @@ nav {
   height: 212px;
   margin-top: 60px;
   overflow: hidden;
-  
+
   img {
       width: 185px;
       margin-right: 15px;
   }
-  
+
   .cartridgeAbout {
       width: 185px;
       margin-right: 15px;
@@ -875,7 +890,7 @@ nav {
       height: 212px;
       background-repeat: no-repeat;
       padding-top: 30px;
-      
+
       h4 {
         top: 0;
         color: @blue;
@@ -883,7 +898,7 @@ nav {
         font-size: 16px;
         line-height: 20px;
       }
-      
+
       p {
         top: 0;
         font-size: 16px;
@@ -903,18 +918,23 @@ nav {
   background-color: @ltGray;
   width: 100%;
   height: 100%;
-  
+
   .Page4 {
     width: 100%;
+    height: 100%;
     max-width: 1900px;
     margin: 0 auto;
+
+    .tableDiv {
+      width: 100%;
+    }
   }
-  
+
   .formPart {
     float: left;
     width: 45%;
-    padding-top: 110px;
-  
+    padding-top: 50px;
+
     h1 {
       font-family: 'Quicksand', sans-serif;
       font-weight: 300;
@@ -929,7 +949,16 @@ nav {
       padding: 0;
       border-bottom: none;
     }
-    
+
+    h2 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      color: black;
+      font-size: 70px;
+      text-transform: uppercase;
+      padding-left: 15%;
+    }
+
     .priceSticker {
       background-color: @green;
       width: 130px;
@@ -939,7 +968,7 @@ nav {
       margin-left: 37%;
       border-radius: 70px;
       margin-top: -15px;
-      
+
       p {
         font-family: 'Quicksand';
         color: white;
@@ -948,7 +977,7 @@ nav {
         margin-top: 27px;
         text-align: center;
       }
-      
+
       h3 {
         text-align: center;
         font-family: 'Quicksand';
@@ -958,7 +987,7 @@ nav {
         letter-spacing: -4px;
         margin-right: 3px;
       }
-      
+
       span {
         font-size: 35px;
         padding-bottom: 5px;
@@ -967,17 +996,17 @@ nav {
         left: -4px;
       }
     }
-    
+
     .vertPosition {
       float: left;
       width:80px;
     }
-    
+
     .billingLabel {
       transform: rotate(-90deg);
       -webkit-transform: rotate(-90deg);
       -moz-transform:rotate(-90deg);
-      
+
       background-color: @midGray;
       font-family: 'Raleway', sans-serif;
       font-weight: 200;
@@ -992,12 +1021,12 @@ nav {
       display: inline-block;
       padding: 30px 0 0 30px;
     }
-    
+
     .paymentLabel {
       transform: rotate(-90deg);
       -webkit-transform: rotate(-90deg);
       -moz-transform:rotate(-90deg);
-      
+
       background-color: @midGray;
       font-family: 'Raleway', sans-serif;
       font-weight: 200;
@@ -1012,27 +1041,27 @@ nav {
       display: inline-block;
       padding: 30px 0 0 80px;
     }
-    
+
     .billing {
       margin-left: 95px;
       margin-top: 20px;
     }
-    
+
     .billingInputs {
       position: relative;
       z-index: 5;
     }
-    
+
     .gbQuantitySelect {
       display: inline-block;
       float: left;
       margin-bottom: 10px;
     }
-    
+
     .payPage2 {
       display: none;
     }
-    
+
     .colorSelect {
         display: inline-block;
         float: right;
@@ -1044,16 +1073,16 @@ nav {
           padding: 10px;
           padding-right: 0;
         }
-        
+
         .Color {
           width:40px;
           height: 40px;
           display: inline-block;
           float: left;
           margin-left: 10px;
-          
+
         }
-        
+
         .colorRed {
           background-color: @red;
         }
@@ -1069,7 +1098,7 @@ nav {
         .colorPurple {
           background-color: @purple;
         }
-        
+
         #colorSelected {
           width: 20px;
           height: 20px;
@@ -1079,12 +1108,12 @@ nav {
           margin-top: 10px;
         }
       }
-      
+
       .cardSelect {
         display: inline-block;
         float: left;
         margin-bottom: 10px;
-        
+
         p{
           font-family: 'Raleway';
           font-weight: 200;
@@ -1094,16 +1123,16 @@ nav {
           padding-right: 0;
           margin-right:5px;
         }
-        
+
         .Card {
           width:65px;
           height: 40px;
           display: inline-block;
           float: left;
           margin-left: 10px;
-          
+
         }
-        
+
         .cardSelected {
           width: 65px;
           height: 40px;
@@ -1111,7 +1140,7 @@ nav {
         }
       }
 
-    
+
     .formCity {
       width:45%;
       display: inline;
@@ -1126,7 +1155,7 @@ nav {
       display: inline;
       float:right;
     }
-    
+
     .next {
       width: 24%;
       height: 35px;
@@ -1142,7 +1171,7 @@ nav {
       padding-left:12px;
       margin-bottom: 12px;
     }
-    
+
     .done {
       width: 24%;
       height: 35px;
@@ -1158,7 +1187,7 @@ nav {
       padding-left:12px;
       margin-bottom: 12px;
     }
-    
+
     .back {
       width: 24%;
       height: 35px;
@@ -1175,34 +1204,34 @@ nav {
       margin-bottom: 12px;
     }
   }
-  
+
   .orderRight {
     width: 55%;
     float: left;
-    padding-top: 100px;
+    padding-top: 50px;
     text-align: center;
     padding-left: 6%;
   }
-  
+
   .gameboyOrder {
     display: inline-block;
-    
-    .largeGB { 
+
+    .largeGB {
       float: left;
-      
+
       img {
         height: 550px;
       }
     }
-    
+
     .gameSelect {
       float: left;
       margin-left: 25px;
       width: 125px;
       padding-top: 15px;
       padding-bottom: 10px;
-      
-      
+
+
       .game {
         height: 145px;
         background-image: url(../img/cartridgeBlank.png);
@@ -1246,7 +1275,7 @@ nav {
   top: 0;
   display: block;
   margin-top: 100px;
-  
+
   h3 {
     font-family: 'Quicksand';
     font-weight: 300;
@@ -1255,33 +1284,33 @@ nav {
     margin-bottom: 15px;
     text-align: center;
   }
-  
+
   .gamesRow1 {
     display: block;
     width: 866px;
     margin: 0 auto;
   }
-  
+
   .gamesRow2 {
     display: block;
     width: 866px;
     margin: 0 auto;
-    
+
     p {
       margin-top:100px;
     }
   }
-  
+
   .gameOption {
     width: 160px;
     margin: 5px;
     display: inline-block;
     cursor: pointer;
-    
+
     img {
       width: 160px;
     }
-    
+
     p {
       float: left;
       position: absolute;
@@ -1301,7 +1330,7 @@ nav {
       transition: opacity .25s;
       cursor: pointer;
     }
-    
+
     .r2 {
       margin-top: 305px;
     }
@@ -1321,11 +1350,11 @@ nav {
   top: 0;
   left: 0;
   display: none;
-  
+
   .thankYouText {
     width: 500px;
     margin: 200px auto 0 auto;
-  
+
     h1 {
         font-family: 'Quicksand', sans-serif;
         font-weight: 300;
@@ -1337,7 +1366,7 @@ nav {
         text-align: center;
         width: 500px;
         }
-      
+
       h3 {
         padding: 20px;
         font-family: 'Raleway', sans-serif;
@@ -1353,16 +1382,16 @@ nav {
 
 
 
-@media (max-width: 1280px) {
-  .topContainer, .Page1 .Page1tableDiv, .textPart, .gameboyFan, .emulatorSection, .gameBoyContainer, .secondContainer, .thirdContainer, .fourthContainer {
+@media (max-width: 1280px), (max-height: 700px) {
+  .topContainer, .Page1 .tableDiv, .textPart, .gameboyFan, .emulatorSection, .gameBoyContainer, .secondContainer, .thirdContainer, .fourthContainer {
     display: none;
   }
-  
-  
+
+
   .Page1 .gameboyMobile {
     display: block;
   }
-  
+
   body {
     position: relative;
     margin: 0;
@@ -1375,7 +1404,7 @@ nav {
 /* Common Classes (use only if you need them) */
 
 .clearfix:before, .clearfix:after {
-    content: " "; 
+    content: " ";
     display: table;
 }
 .clearfix:after {
